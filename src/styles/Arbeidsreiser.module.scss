@@ -1,0 +1,35 @@
+$input-width: 180px;
+
+.subform_title {
+  margin-top: 2px;
+}
+
+.input_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
+
+.arbeidsreiser_form {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    align-self: flex-end;
+    width: $input-width + 4;
+  }
+}
+
+.arbeidsreiser_list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+
+  li {
+    border: solid 1px grey;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #f0f4ff, #e0eaff);
+  }
+}

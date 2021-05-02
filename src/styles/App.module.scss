@@ -1,0 +1,83 @@
+$color-skatt-primary-hard: #0098b3;
+$color-skatt-primary-soft: rgb(0, 184, 217);
+$color-section-primary: white;
+$color-section-contrast: lightgrey;
+$input-width: 180px;
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /*background: linear-gradient(0deg, #fff, $color-skatt-primary-hard);*/
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    margin: 24px;
+  }
+}
+
+:global section {
+  padding: 20px;
+  margin-bottom: 8px;
+  background: $color-section-primary;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  h3 {
+    align-self: flex-start;
+  }
+}
+
+:global button {
+  margin: 2px;
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 24px;
+  color: white;
+  background: $color-skatt-primary-soft;
+  font-size: 20px;
+  font-weight: 500;
+  transition-duration: 0.1s;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+:global button:hover {
+  background: $color-skatt-primary-hard;
+  cursor: pointer;
+}
+
+:global input {
+  align-self: flex-end;
+  width: $input-width;
+  margin-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  text-align: right;
+  background-color: #f6f8fa;
+}
+
+:global input:focus {
+  outline: none;
+  border: 1px solid lightskyblue;
+  box-shadow: 0 0 10px #719ece;
+}
+
+.App_header {
+  align-self: stretch;
+  background-color: #282c34;
+  box-shadow: 0 10px 20px rgba(57, 63, 72, 0.3);
+  min-height: 10vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
