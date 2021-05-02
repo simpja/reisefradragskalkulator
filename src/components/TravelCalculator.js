@@ -4,6 +4,7 @@ import Arbeidsreiser from "./Arbeidsreiser";
 import Besoeksreiser from "./Besoeksreiser";
 import Utgifter from "./Utgifter";
 import postCalculation from "../scripts/postCalculation";
+import CalculationResult from "./CalculationResult";
 
 export default function TravelCalculator() {
   const initialCalculation = {
@@ -11,7 +12,7 @@ export default function TravelCalculator() {
     besoeksreiser: [],
     utgifterBomFergeEtc: "",
   };
-  const initialCalculationResult = 0;
+  const initialCalculationResult = -1;
 
   const [calculation, setCalculation] = useState(initialCalculation);
   const [calculationResult, setCalculationResult] = useState(
@@ -46,7 +47,6 @@ export default function TravelCalculator() {
 
     postCalculation(calculationForAPI)
       .then((response) => {
-        console.log("Got response!");
         setCalculationResult(response.reisefradrag);
       })
       .catch((error) => {
@@ -79,11 +79,8 @@ export default function TravelCalculator() {
           <button onClick={clearCalculation}>Start med blanke ark</button>
         </section>
 
-        {calculationResult !== 0 && (
-          <section>
-            <h3>Resultat</h3>
-            <p>Reisefradragsberegningen din ble NOK: {calculationResult}</p>
-          </section>
+        {calculationResult >= 0 && (
+          <CalculationResult calculationResult={calculationResult} />
         )}
       </div>
     </>
