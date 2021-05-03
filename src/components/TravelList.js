@@ -73,10 +73,8 @@ export default function TravelList({
           </label>
         </div>
         <div className={styles.input_container}>
-          <label>
-            Antall forekomster av denne reisen:
-            <input name="antall" type="text" />
-          </label>
+          <label>Antall forekomster av denne reisen:</label>
+          <input name="antall" type="text" />
         </div>
         {feilmelding && <p className={styles.errorMessage}>Ugyldige verdier</p>}
         <button>Legg til</button>

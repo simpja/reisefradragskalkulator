@@ -19,6 +19,12 @@ $input-width: 180px;
   }
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.2em;
+  }
+}
+
 :global section {
   padding: 20px;
   margin-bottom: 8px;

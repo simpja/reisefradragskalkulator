@@ -18,9 +18,9 @@ export default function CalculatorInfo() {
       </p>
       <p>
         Fra summen av kilometerfradraget og utgifter til bom, ferge etc. trekkes
-        fra en egenandel på kr 22 000.
+        fra en egenandel på kr 22 000
       </p>
-      <p>Resten er reisefradraget.</p>
+      <p>Resten er reisefradraget</p>
     </section>
   );
 }
