@@ -13,7 +13,7 @@ export default function CalculationResult(calculationResult) {
   return (
     <section>
       <h3>Resultat</h3>
-      <p>Din reisefradragsberegning ble beregnet til:</p>
+      <p>Ditt reisefradrag er beregnet til:</p>
       <p
         className={styles.resultDisplay}
       >{`${calculationResult.calculationResult},-`}</p>
