@@ -1,7 +1,6 @@
-$color-skatt-primary-hard: #0098b3;
-$color-skatt-primary-soft: rgb(0, 184, 217);
-$color-section-primary: white;
-$color-section-contrast: lightgrey;
+$color-skatt-primary-hard: #388087;
+$color-skatt-primary-soft: #b0dde4;
+$color-section-primary: #ffffff;
 $input-width: 180px;
 
 .App {
@@ -38,7 +37,7 @@ $input-width: 180px;
   border: 0;
   border-radius: 6px;
   padding: 12px 24px;
-  color: white;
+  color: black;
   background: $color-skatt-primary-soft;
   font-size: 20px;
   font-weight: 500;
