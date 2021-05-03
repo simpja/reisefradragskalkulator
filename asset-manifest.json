@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reisefradragskalkulator/static/css/main.01cbfd31.chunk.css",
-    "main.js": "/reisefradragskalkulator/static/js/main.b1de0b44.chunk.js",
-    "main.js.map": "/reisefradragskalkulator/static/js/main.b1de0b44.chunk.js.map",
+    "main.js": "/reisefradragskalkulator/static/js/main.02bcb16e.chunk.js",
+    "main.js.map": "/reisefradragskalkulator/static/js/main.02bcb16e.chunk.js.map",
     "runtime-main.js": "/reisefradragskalkulator/static/js/runtime-main.d3f58ed4.js",
     "runtime-main.js.map": "/reisefradragskalkulator/static/js/runtime-main.d3f58ed4.js.map",
     "static/js/2.57efeff3.chunk.js": "/reisefradragskalkulator/static/js/2.57efeff3.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.d3f58ed4.js",
     "static/js/2.57efeff3.chunk.js",
     "static/css/main.01cbfd31.chunk.css",
-    "static/js/main.b1de0b44.chunk.js"
+    "static/js/main.02bcb16e.chunk.js"
   ]
 }
