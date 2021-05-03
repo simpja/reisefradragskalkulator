@@ -1,8 +1,8 @@
-import styles from "../styles/CalculatorInfo.module.scss";
+import styles from "../styles/Travels.module.scss";
 
 export default function CalculatorInfo() {
   return (
-    <section className={styles.info}>
+    <section className={styles.info_section}>
       <h3>Reisefradraget beregnes som følger</h3>
       <p>
         Totalt antall kilometer beregnes for alle arbeids- og besøksreiser. Øvre

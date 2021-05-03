@@ -1,7 +1,8 @@
-export default function CalculationResult(calculationResult) {
-  const resultat = calculationResult.calculationResult;
+import styles from "../styles/Travels.module.scss";
 
-  if (resultat === 0) {
+export default function CalculationResult(calculationResult) {
+  // Renders conditional outputs for the user depending on result of calculation
+  if (calculationResult.calculationResult === 0) {
     return (
       <section>
         <h3>Resultat</h3>
@@ -12,10 +13,10 @@ export default function CalculationResult(calculationResult) {
   return (
     <section>
       <h3>Resultat</h3>
-      <p>
-        Reisefradragsberegningen din ble NOK:
-        {resultat}
-      </p>
+      <p>Din reisefradragsberegning ble beregnet til:</p>
+      <p
+        className={styles.resultDisplay}
+      >{`${calculationResult.calculationResult},-`}</p>
     </section>
   );
 }

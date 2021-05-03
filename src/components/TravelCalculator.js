@@ -1,12 +1,11 @@
-import styles from "../styles/TravelCalculator.module.scss";
 import { useState } from "react";
-import Arbeidsreiser from "./Arbeidsreiser";
-import Besoeksreiser from "./Besoeksreiser";
+import TravelList from "./TravelList";
 import Utgifter from "./Utgifter";
-import postCalculation from "../scripts/postCalculation";
+import { postCalculation } from "../scripts/utils";
 import CalculationResult from "./CalculationResult";
 
 export default function TravelCalculator() {
+  // Consts for initializing and resetting states
   const initialCalculation = {
     arbeidsreiser: [],
     besoeksreiser: [],
@@ -14,31 +13,33 @@ export default function TravelCalculator() {
   };
   const initialCalculationResult = -1;
 
+  // State "calculation" holds user inputs that will
+  //    be parsed and passed to the API, which in turn
+  //    returns a result saved in the state object "calculationResult"
   const [calculation, setCalculation] = useState(initialCalculation);
   const [calculationResult, setCalculationResult] = useState(
     initialCalculationResult
   );
 
+  // Handles submitting of calculation on button press
   const handleOnSubmit = () => {
-    // Make an empty object on the correct form of API body
+    // Object to hold body of API call
     const calculationForAPI = {
       arbeidsreiser: [],
       besoeksreiser: [],
       utgifterBomFergeEtc: 0,
     };
 
-    // Map attributes from the arbeidsreiser array
+    // Map attributes from arbeidsreiser, besoeksreiser, and
+    //    utgifter from state object calculation
     calculationForAPI.arbeidsreiser = calculation.arbeidsreiser.map(
       ({ key, isEditing, ...stripped }) => stripped
     );
-
-    // Map attributes from the besoeksreiser array
     calculationForAPI.besoeksreiser = calculation.besoeksreiser.map(
       ({ key, isEditing, ...stripped }) => stripped
     );
-
     // calculation.utgifterBomFergeEtc is initially set to an empty string-
-    // to keep its related input field empty. API takes only 0 as a valid "empty" value
+    // to keep its related input field empty. API accepts only 0 as a valid "empty" value
     if (calculation.utgifterBomFergeEtc === "") {
       calculationForAPI.utgifterBomFergeEtc = 0;
     } else {
@@ -48,6 +49,8 @@ export default function TravelCalculator() {
     postCalculation(calculationForAPI)
       .then((response) => {
         setCalculationResult(response.reisefradrag);
+        // Scroll down on page to display result
+        window.scrollBy(0, 400);
       })
       .catch((error) => {
         alert("Her har det skjedd en feil!");
@@ -55,6 +58,8 @@ export default function TravelCalculator() {
       });
   };
 
+  // Function to clear states
+  // Used to reset the form
   const clearCalculation = () => {
     setCalculation(initialCalculation);
     setCalculationResult(initialCalculationResult);
@@ -62,19 +67,24 @@ export default function TravelCalculator() {
 
   return (
     <>
-      <div className={styles.TravelCalculator} key="keykey">
-        <Arbeidsreiser
+      <div key="keykey">
+        <TravelList
           calculation={calculation}
           setCalculation={setCalculation}
+          name={"arbeidsreiser"}
+          title={"Arbeidsreiser"}
         />
-        <Besoeksreiser
+
+        <TravelList
           calculation={calculation}
           setCalculation={setCalculation}
+          name={"besoeksreiser"}
+          title={"Besøksreiser"}
         />
 
         <Utgifter calculation={calculation} setCalculation={setCalculation} />
 
-        <section className={styles.horizontal_button_group}>
+        <section>
           <button onClick={handleOnSubmit}>Kalkuler</button>
           <button onClick={clearCalculation}>Start med blanke ark</button>
         </section>

@@ -1,0 +1,86 @@
+$input-width: 180px;
+
+.info_section {
+  text-align: left;
+}
+
+.subform_title {
+  margin-top: 2px;
+}
+
+.input_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
+
+.input_container_li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 50px;
+
+  input {
+    max-width: 50px;
+  }
+}
+
+.travel_form {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    align-self: flex-end;
+    width: $input-width + 4;
+  }
+}
+
+.travel_list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: solid 1px grey;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #f0f4ff, #e0eaff);
+    margin-bottom: 2px;
+
+    button {
+      padding: 2px 12px;
+    }
+  }
+}
+
+.errorMessage {
+  color: red;
+  display: flex;
+  align-self: flex-end;
+  font-weight: 400;
+  margin: 2px;
+}
+
+.errorMessage_li {
+  color: red;
+  font-weight: 400;
+  margin: 2px;
+}
+
+.errorMessage_utgift {
+  display: block;
+  float: right;
+  color: red;
+  font-weight: 400;
+  margin: 2px;
+  margin-left: 6px;
+}
+
+.resultDisplay {
+  font-size: 30px;
+  font-weight: 800;
+}
