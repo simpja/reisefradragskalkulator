@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/reisefradragskalkulator/static/css/main.6404b7fd.chunk.css",
-    "main.js": "/reisefradragskalkulator/static/js/main.2ee3d1ea.chunk.js",
-    "main.js.map": "/reisefradragskalkulator/static/js/main.2ee3d1ea.chunk.js.map",
-    "runtime-main.js": "/reisefradragskalkulator/static/js/runtime-main.8ccc72db.js",
-    "runtime-main.js.map": "/reisefradragskalkulator/static/js/runtime-main.8ccc72db.js.map",
-    "static/js/2.2f05f6cb.chunk.js": "/reisefradragskalkulator/static/js/2.2f05f6cb.chunk.js",
-    "static/js/2.2f05f6cb.chunk.js.map": "/reisefradragskalkulator/static/js/2.2f05f6cb.chunk.js.map",
-    "static/js/3.32dc1882.chunk.js": "/reisefradragskalkulator/static/js/3.32dc1882.chunk.js",
-    "static/js/3.32dc1882.chunk.js.map": "/reisefradragskalkulator/static/js/3.32dc1882.chunk.js.map",
+    "main.css": "/reisefradragskalkulator/static/css/main.49eed284.chunk.css",
+    "main.js": "/reisefradragskalkulator/static/js/main.b1de0b44.chunk.js",
+    "main.js.map": "/reisefradragskalkulator/static/js/main.b1de0b44.chunk.js.map",
+    "runtime-main.js": "/reisefradragskalkulator/static/js/runtime-main.d3f58ed4.js",
+    "runtime-main.js.map": "/reisefradragskalkulator/static/js/runtime-main.d3f58ed4.js.map",
+    "static/js/2.57efeff3.chunk.js": "/reisefradragskalkulator/static/js/2.57efeff3.chunk.js",
+    "static/js/2.57efeff3.chunk.js.map": "/reisefradragskalkulator/static/js/2.57efeff3.chunk.js.map",
+    "static/js/3.6f8e9cf2.chunk.js": "/reisefradragskalkulator/static/js/3.6f8e9cf2.chunk.js",
+    "static/js/3.6f8e9cf2.chunk.js.map": "/reisefradragskalkulator/static/js/3.6f8e9cf2.chunk.js.map",
     "index.html": "/reisefradragskalkulator/index.html",
-    "static/css/main.6404b7fd.chunk.css.map": "/reisefradragskalkulator/static/css/main.6404b7fd.chunk.css.map",
-    "static/js/2.2f05f6cb.chunk.js.LICENSE.txt": "/reisefradragskalkulator/static/js/2.2f05f6cb.chunk.js.LICENSE.txt"
+    "static/css/main.49eed284.chunk.css.map": "/reisefradragskalkulator/static/css/main.49eed284.chunk.css.map",
+    "static/js/2.57efeff3.chunk.js.LICENSE.txt": "/reisefradragskalkulator/static/js/2.57efeff3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ccc72db.js",
-    "static/js/2.2f05f6cb.chunk.js",
-    "static/css/main.6404b7fd.chunk.css",
-    "static/js/main.2ee3d1ea.chunk.js"
+    "static/js/runtime-main.d3f58ed4.js",
+    "static/js/2.57efeff3.chunk.js",
+    "static/css/main.49eed284.chunk.css",
+    "static/js/main.b1de0b44.chunk.js"
   ]
 }
