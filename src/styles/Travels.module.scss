@@ -1,4 +1,4 @@
-$input-width: 180px;
+$input-width: 110px;
 
 .info_section {
   text-align: left;
@@ -12,6 +12,9 @@ $input-width: 180px;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 6px;
+  input {
+    max-width: $input-width;
+  }
 }
 
 .input_container_li {
@@ -50,6 +53,10 @@ $input-width: 180px;
     border-radius: 6px;
     background-image: linear-gradient(to right, #f0f4ff, #e0eaff);
     margin-bottom: 2px;
+
+    p {
+      min-width: 100px;
+    }
 
     button {
       padding: 2px 12px;
